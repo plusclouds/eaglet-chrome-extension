@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Login</title>
+    <script src="./js/login.js" defer></script>
+    <style>
+        body {
+            font-family: sans-serif;
+            padding: 20px;
+        }
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+        }
+        button {
+            padding: 8px 12px;
+            cursor: pointer;
+        }
+        #status {
+            font-size: 12px;
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+<h3>🔐 API Token</h3>
+<form id="token-form">
+    <input type="text" id="api-token" placeholder="Enter your token" />
+    <button type="submit">Save</button>
+</form>
+<p id="status"></p>
+</body>
+</html>

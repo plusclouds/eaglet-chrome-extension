@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "PlusClouds Eaglet Extention",
+  "version": "1.0",
+  "description": "You can integrate eaglet to you browser so that you can follow your opportunities",
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "Toggle Eaglet Dashboard"
+  },
+  "permissions": ["activeTab", "scripting", "storage"],
+  "web_accessible_resources": [
+    {
+      "resources": ["login.html"],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["drawer.js"],
+      "css": ["drawer.css"]
+    }
+  ]
+}
